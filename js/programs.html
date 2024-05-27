@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        arr = [2, 4, 7, 9]
+        arr1 = []
+        for (let i = 1; i <= 9; i++) {
+            if (arr.includes(i) == false) {
+                arr1.push(i)
+            }
+        }
+
+        console.log(arr1, 'includes');
+
+        arr = [2, 4, 7, 9]
+        arr2 = []
+        for (let i = 1; i <= 9; i++) {
+            if (arr.indexOf(i) == -1) {
+                arr2.push(i)
+            }
+        }
+
+        console.log(arr2, 'indexof');
+
+        arr3 = []
+        for (let i = 1; i <= 9; i++) {
+            let a = arr.includes(i) ? null : arr3.push(i)
+        }
+        console.log(arr3, 'conditional');
+
+
+
+        out = ''
+        function rev(a) {
+            for (let i = 0; i < a.length; i++) {
+                out = a[i] + out
+            }
+            return out
+        }
+
+        console.log(rev('hello'));
+
+
+        str = 'hello'
+        str_sp = str.split('')
+        console.log(str_sp);
+        console.log(str_sp.reverse());
+        console.log(str_sp.join(''));
+
+
+
+        // console.log('hello'.length);
+
+
+
+
+        let inp = [8, 10, 20, 10, 30, 10, 10]
+
+        out = []
+        for (let i = 0; i < inp.length; i++) {
+            inp[i] == 10 ? out.push(i) : ''
+        }
+
+        // console.log(out, 'conditional');
+
+        arr = [100, 'hi', 20, 30]
+        rev_out = []
+        arr.forEach((a) => {
+            rev_out.unshift(a)
+        })
+        console.log(rev_out, 'reverse');
+
+    </script>
+</body>
+
+</html>

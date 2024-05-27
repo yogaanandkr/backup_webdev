@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .main {
+            height: 200px;
+            width: 100%;
+            background-image: url(./mountain.png), url(./mountain.png), url(./sea.jpg);
+            background-size: 50% 200px, 55% 200px, 100%;
+            background-repeat: no-repeat;
+            background-position: 0px 0px, 500px 0px, 0px;
+            display: flex;
+            justify-content: center;
+            transition: background-position 3s;
+            background-attachment: scroll;
+        }
+
+        h1 {
+            font-size: 0px;
+            opacity: 0;
+            transition: font-size 3s, color 3s, opacity 3s;
+
+        }
+
+        .main:hover {
+            background-position: -100px 0px, 600px 0px, 0px;
+            transition: 3s;
+        }
+
+        .main:hover h1 {
+            opacity: 100;
+            font-size: 100px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Jump here</h1>
+    </div>
+</body>
+
+</html>

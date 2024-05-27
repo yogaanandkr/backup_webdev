@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 400px;
+            width: 500px;
+            background-color: salmon;
+            border-radius: 10px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            transition: 1s;
+        }
+
+        .container img {
+            width: 90%;
+            height: 200px;
+            transition: 1s;
+        }
+
+        .container p {
+            font-size: 20px;
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .container:hover img {
+            width: 90%;
+            transform: rotate(-30deg);
+            /* display: none; */
+        }
+
+        .container:hover {
+            justify-content: space-around;
+            width: 700px;
+        }
+
+        .container:hover p {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./21729-4-saucony-grid-9000.png" alt="">
+        <p>Puma <br>
+            Rs.4000</p>
+    </div>
+</body>
+
+</html>

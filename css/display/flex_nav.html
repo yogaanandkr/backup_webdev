@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-image: linear-gradient(40deg, yellow, green, yellow);
+        }
+
+        .nav {
+            height: 75px;
+            width: 100%;
+            background-image: linear-gradient(40deg, yellow, green, yellow);
+            /* border: 2px solid white; */
+            display: flex;
+        }
+
+        .logo {
+            height: 75px;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .links {
+            /* height: 75px; */
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        ul {
+            color: black;
+            display: flex;
+            /* height: 75px; */
+            width: 70%;
+
+            justify-content: space-between;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li:hover {
+            text-decoration: underline;
+            color: black;
+            cursor: pointer;
+
+        }
+
+        .box {
+            height: 150px;
+            width: 150px;
+            background-image: linear-gradient(40deg, yellow, green, yellow);
+            border-radius: 20px;
+            display: flex;
+            border: 2px solid black;
+            transition: 1s;
+        }
+
+        .par {
+            height: 100vh;
+        }
+
+        .first_row,
+        .second_row,
+        .third_row {
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .box:hover {
+            padding: 10px;
+            box-shadow: 10px 0px 30px black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="https://instagram.com">
+                <img src="../assignments_on_leave/lion.jpg" alt="">
+            </a>
+        </div>
+        <div class="links">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Products</li>
+                <li>Order</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="par">
+        <div class="first_row">
+
+            <div class="box a"></div>
+            <div class="box b"></div>
+            <div class="box c"></div>
+            <div class="box d"></div>
+            <div class="box e"></div>
+        </div>
+
+        <div class="second_row">
+
+            <div class="box f"></div>
+            <div class="box g"></div>
+            <div class="box h"></div>
+            <div class="box i"></div>
+            <div class="box j"></div>
+        </div>
+
+        <!-- <div class="third_row">
+
+            <div class="box k"></div>
+            <div class="box l"></div>
+            <div class="box m"></div>
+            <div class="box n"></div>
+            <div class="box o"></div>
+        </div> -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      fieldset {
+        height: 300px;
+        width: 400px;
+        background-image: url(./tajmahal.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: 100px;
+      }
+
+      tr {
+        display: none;
+      }
+
+      fieldset:hover {
+        background-image: none;
+        background-color: black;
+        color: white;
+      }
+
+      .msd {
+        display: none;
+      }
+
+      fieldset:hover .msd {
+        display: block;
+      }
+
+      fieldset:hover .taj {
+        display: none;
+      }
+
+      fieldset:hover tr {
+        display: block;
+      }
+
+      tr td img {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <div class=""> -->
+    <fieldset>
+      <legend class="taj" style="text-align: center">taj mahal</legend>
+      <legend class="msd" style="text-align: center">msd</legend>
+      <!-- <div class="onhover"> -->
+
+      <table>
+        <tr>
+          <td><img src="./ms-dhoni-hd-red-mz2zm0u2wro5f9mw.jpg" alt="" /></td>
+          <td>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              accusantium quia accusamus repellendus. Quaerat itaque impedit
+              ratione vel obcaecati repudiandae. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Dignissimos officia provident natus
+              sint voluptas quae. Quidem quas modi possimus quod!
+            </p>
+          </td>
+        </tr>
+      </table>
+      <!-- <div class="img">
+
+            </div>
+            <div class="text"></div> -->
+      <!-- </div> -->
+    </fieldset>
+
+    <!-- </div> -->
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        .par {
+            background-color: black;
+            height: 250px;
+            width: 250px;
+            position: fixed;
+
+        }
+
+        .chi {
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            animation-name: a;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 2s; */
+        }
+
+        @keyframes a {
+            0% {
+                margin-left: 0px;
+            }
+
+            25% {
+                margin-top: 0px;
+                margin-left: 200px;
+            }
+
+            50% {
+                margin-top: 200px;
+                margin-left: 200px;
+            }
+
+            75% {
+                margin-top: 200px;
+                margin-left: 0px;
+
+            }
+        }
+
+        h1 {
+            position: fixed;
+            top: 300px;
+            animation-name: b;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes b {
+            0% {
+                color: red;
+
+            }
+
+
+
+            51% {
+                color: yellow;
+            }
+
+            75% {
+                color: red;
+            }
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="par">
+        <div class="chi"></div>
+    </div>
+
+    <h1>Hello</h1>
+</body>
+
+</html>

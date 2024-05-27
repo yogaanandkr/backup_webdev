@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load fill %}
+  </head>
+  <body>
+    <table rules="all" border="2px" cellpadding="10px">
+      <tr>
+        {% for key in data %}
+        <td>{{ key }}</td>
+        {% endfor %}
+        <td>License</td>
+      </tr>
+
+      <tr>
+        {% for key, value in data.items %}
+        <td>{{ value|title }}</td>
+        {% endfor %} {% for key, value in data.items %} {% if key == 'age' %}
+        <td>{{ key|license }}</td>
+        {% endif %} {% endfor %}
+      </tr>
+    </table>
+
+    <a href="{% url 'aboutme' %}">about me</a>
+  </body>
+</html>

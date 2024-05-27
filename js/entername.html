@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text"><br>
+    <input type="color" id="color">
+    <span></span><br>
+    <button>submit</button>
+
+    <script>
+        let button = document.querySelector('button')
+        let inp = document.querySelector('input')
+        // if (inp.value == '') {
+        //     document.body.style.backgroundColor = "black"
+        // }
+
+        button.addEventListener('click', () => {
+            let inp = document.querySelector('input')
+            let button = document.querySelector('button')
+            let p = document.querySelector('span')
+            if (inp.value == '') {
+
+                p.innerHTML = 'Please enter a name'
+                p.style.cssText = "color: red"
+                inp.style.border = "1px solid red"
+            }
+            else {
+                p.innerHTML = 'valid'
+                p.style.cssText = "color: green"
+                inp.style.border = "1px solid green"
+            }
+        })
+
+        // (function check() {
+        //     if (inp.value == '') {
+        //         document.body.style.backgroundColor = "black"
+
+        //     }
+        // })()
+
+
+
+        // COLOR CHANGE BASED ON INPUT COLOR ======================================================
+
+
+        let color = document.getElementById('color')
+        color.addEventListener('input', () => {
+            document.body.style.backgroundColor = color.value
+        })
+
+
+
+        // setTimeout(() => {
+
+        let colors = ["red", "green", "blue", "yellow", "cyan", "pink"]
+        console.log(colors.length);
+
+        i = 0
+        let changecolor = () => {
+            document.body.style.backgroundColor = colors[i]
+            document.body.style.transition = '3s'
+            i += 1 % (colors.length)
+
+            if (i == colors.length) {
+                i = 0
+            }
+        }
+
+        // setInterval(() => {
+        //     changecolor()
+        // }, 1000);
+
+
+
+        // setInterval(() => {
+        //     console.log(document.body.style.backgroundColor);
+        // }, 1100);
+
+
+
+        // for (let i = 0; i < colors.length; i++) {
+        //     console.log(colors[i]);
+        //     // document.body.style.backgroundColor = colors[i]
+        //     setInterval(() => {
+        //         document.body.style.cssText = `background-color: ${colors[i]}`
+        //     }, 2000)
+
+        //     // if (i == colors.length - 1) {
+        //     //     i = 0
+        //     // }
+        // }
+        // }, 1000)
+
+
+        // function auto() {
+        //     let colors = ["red", "green", "blue", "yellow", "cyan", "pink"]
+        //     console.log(colors.length);
+        //     for (let i = 0; i < colors.length; i++) {
+        //         // document.body.style.backgroundColor = colors[i]
+        //         document.body.style.cssText = `background-color: ${colors[i]}; transition: 3s`
+
+        //         // if (i == colors.length - 1) {
+        //         //     i = 0
+        //         // }
+        //     }
+        // }
+        // auto()
+
+
+
+        inp.addEventListener("input", () => {
+
+            let colors = ["red", "green", "blue", "yellow", "cyan", "pink"]
+            if (inp.value == '') {
+                document.body.style.backgroundColor = "black"
+            }
+            // else {
+            //     let i = (Math.floor(Math.random() * colors.length));
+            //     document.body.style.backgroundColor = colors[i]
+            // }
+
+            document.body.style.backgroundColor = inp.value
+
+        })
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // map = [1, 2, 3, 4, 5]
+        // let b = map.map((x, y, z) => {
+        //     // console.log(x);
+        //     console.log(x, 'first ag');
+        //     console.log(y);
+        //     console.log(z);
+        // })
+        // console.log(b);
+
+
+        // red = [1, 2, 3, 4, 5];
+        // let redres = red.reduce((a, b, c, d) => {
+        //     console.log(a);
+        //     console.log(b);
+        //     console.log(c);
+        //     // console.log(c, 'index of c');       
+        //     // console.log(d, 'array index');
+        //     return a + b;
+        // })
+
+        // console.log(redres, 'reduce');
+        // console.log(map, "this is original array");
+        // console.log(b, "this is b");
+
+
+        // each = [1, 2, 3, 4, 5]
+        // let c = each.forEach((x, y) => {
+        //     console.log(x + y)
+        // })
+        // console.log(c);
+
+        // let x = [10, 20, 30, 40]
+        // let y = x.reduce(function (p, q, r) {
+        //     console.log('p = ', p, 'q = ', q, 'r = ', r);
+        //     return p + 5
+        // }, p = 100)
+
+        // console.log(y);
+
+        // function div(a) {
+        //     let ans = a.filter((a, b) => {
+        //         return a % 3 == 0;
+        //     });
+        //     return ans
+        // }
+        // console.log(div([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+
+
+        function check(...a) {
+            let x = a.filter(b => {
+                return b % 3 == 0
+            })
+            return x
+        }
+
+        // console.log(check(1, 2, 3, 4, 5, 6, 7, 8, 9));
+
+        function demo(a, b, c, d) {
+            let [one, two] = [a, ...rest];
+            console.log(one, 'rest');
+            console.log(two, 'rest');
+
+        }
+
+        // demo(1, 2, 3, 4, 5)
+
+        function odd(...a) {
+            let x = a.filter((a, b) => {
+                // if (b % 2 != 0) {
+                return b % 2 != 0
+                // }
+            })
+            return x
+        }
+
+        console.log(odd(0, 10, 2, 3, 4, 5, 6, 7, 8, 9));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = fetch("https://api.github.com/users")
+        let y = a.then(ab => {
+            console.log('ab', ab);
+            // console.log(ab.json());
+            return ab.json();
+        })
+        // console.log(y);
+        y.then(ans => {
+            console.log('ans', ans)
+
+            ans.map(a => {
+                console.log(a)
+            })
+        })
+            .catch(err => {
+                console.error('dint load')
+            })
+    </script>
+</body>
+
+</html>

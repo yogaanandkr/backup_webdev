@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body {
+            display: flex;
+
+        } */
+
+        .sup {
+            width: 800px;
+            height: 800px;
+            margin-top: 100px;
+            background-color: green;
+            /* position: relative; */
+        }
+
+        .par {
+            width: 500px;
+            height: 500px;
+            margin-top: 100px;
+            background-color: red;
+            /* position: relative; */
+        }
+
+
+
+        .chi {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            bottom: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="sup">
+
+    </div>
+
+    <div class="par">
+        <div class="chi"></div>
+    </div> -->
+
+    <table border="2px" style="border-collapse: collapse;" cellpadding="10px">
+        <tr>
+            <td colspan="2">A</td>
+            <td colspan="2">b</td>
+            <td colspan="2">c</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">D</td>
+            <td colspan="3">E </td>
+        </tr>
+    </table>
+
+    <h1>one</h1>
+    <h1>one</h1>
+    <h1>one</h1>
+
+    <script>
+
+        let coll = document.getElementsByTagName('h1')
+        let arr = Array.from(coll)
+        arr.map(a => {
+            a.style.backgroundColor = 'red'
+        })
+        let check = even(10)
+        // console.log(check);
+        check.then(res => console.log(res))
+            .catch(err => {
+                console.log(err);
+            })
+
+        function even(num) {
+            let pr = new Promise((res, rej) => {
+                if (num % 2 == 0) {
+                    res("its even")
+                }
+                else {
+                    rej("not even")
+                }
+            })
+            return pr
+        }
+
+        // function one(a) {
+        //     return (a + 10);
+        // }
+
+        // function two() {
+        //     // setTimeout(() => {
+        //     return 10
+        //     // }, 2000);
+        // }
+
+
+
+        function f1() {
+            console.log("idiot yogita")
+        }
+
+
+        function f2() {
+            console.log("anbhavi")
+        }
+
+        f2(f1());
+
+        //console.log(one(two()));
+
+
+        function checkit(...x) {
+            let a = x.reduce((a, b) => {
+                if (a.length > b.length) {
+                    return a
+                }
+                else {
+                    return b
+                }
+            })
+            console.log(a);
+        }
+
+        checkit('a', 'abc', 'abcd')
+    </script>
+</body>
+
+</html>

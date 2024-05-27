@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>start</button>
+    <h2>pause</h2>
+    <h1></h1>
+
+    <script>
+        let obj = [{
+            id: 0,
+            name: 'penguin',
+            age: 23,
+            place: 'antartic'
+        }]
+        // {
+        //     id: 1,
+        //     name: 'anand',
+        //     age: 22,
+        //     place: 'Madurai'
+        // },
+
+        // delete obj.id
+        Object.assign(obj[0], { 'home': true })
+        console.log(obj);
+        let { id, name, ...other } = obj
+        console.log(id);
+
+        let arr = [['one', 10], ['two', 20], ['three', 30], ['four', 40], ['five', 50]]
+        console.log(Object.entries(arr));
+        // console.log(Object.isArray(arr1));
+
+        // console.log(Object.isArray());       
+
+        // let { id, name, ...other } = obj
+        // console.log(other);
+
+        let arr1 = [1, 2, 3, 4, 5]
+        console.log(arr1.toString());
+        console.log(arr1.join(" "));
+        // let [a, b, ...c] = arr
+        // console.log(c);
+
+        // (function f1() {
+        //     console.log('hello f1');
+        // })()
+
+        // function arg(...x) {
+        //     console.log(x);
+        // }
+
+        // arg(1, 2, 3, 4)
+
+        // let ar = [1, 2, 'anand', 5]
+
+        // console.log(ar.reverse());
+
+
+        // let dest = [10, 20, 30, 40]
+        // console.log(typeof dest);
+        // let [a, b, ...c] = dest
+        // console.log(typeof a);
+        // console.log(b);
+        // console.log(typeof c);
+        // let fil = [2, 3, 4, 5]
+        // let answ = fil.filter((a, b) => {
+        //     if (b % 2 == 0) {
+        //         if (a % 2 == 0) {
+        //             return a
+        //         }
+        //     }
+        // })
+        // console.log('answ', answ);
+        let button = document.querySelector('button')
+        let i = 0
+        button.addEventListener("click", () => {
+            var a = setInterval(() => {
+                i += 1
+                document.querySelector('h1').innerHTML = i
+            }, 1000);
+            let h2 = document.querySelector('h2')
+            h2.addEventListener("click", () => {
+                clearInterval(a)
+            })
+
+        })
+
+        let a = setTimeout(() => {
+            console.log('aft 5 sec')
+        }, 5000)
+
+        // clearTimeout(a)
+    </script>
+</body>
+
+</html>

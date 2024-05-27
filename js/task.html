@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="password">
+    <hr>
+    <h1></h1>
+
+
+    <script>
+        let inp = document.querySelector("input")
+        let h1 = document.querySelector("h1")
+        inp.addEventListener("input", () => {
+            console.log(inp);
+            if ((inp.value).length < 3) {
+                h1.innerHTML = "weak password"
+                h1.style.color = "red"
+            }
+            else if ((inp.value).length <= 7) {
+                h1.innerHTML = "medium password"
+                h1.style.color = "orange"
+            }
+
+            else if ((inp.value).length <= 8) {
+                h1.innerHTML = "stronng password"
+                h1.style.color = "lightgreen"
+            }
+
+            else {
+                h1.innerHTML = "excellent password"
+                h1.style.color = "green"
+            }
+        })
+
+        // sessionStorage.setItem("name", "peguin")
+        // localStorage.clear()
+    </script>
+</body>
+
+</html>

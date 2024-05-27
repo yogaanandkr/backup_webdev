@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 400px;
+            width: 400px;
+            background-image: url(./lion.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 100%;
+            box-shadow: 10px 0px 20px black;
+            color: transparent;
+        }
+
+        div:hover {
+            background-image: url(./ms-dhoni-hd-red-mz2zm0u2wro5f9mw.jpg);
+            background-size: cover;
+            background-position: -100px 0px;
+            box-shadow: 10px 0px 20px goldenrod;
+            color: blue;
+        }
+
+        div:hover span {
+            margin-top: 300px;
+        }
+
+        div:hover~body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class=""><span>M.S.D</span> </div>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            height: 500px;
+            width: 500px;
+            background-color: black;
+        }
+
+        .one {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="parent">
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+    </div> -->
+
+    <form action="./assignment.html" method="get">
+        <label for="">search:</label>
+        <input type="search">
+        <label for="email">email</label>
+        <input type="email" required>
+        <input type="radio">
+        <input type="checkbox">
+        <input type="checkbox" checked>
+        <input type="checkbox">
+        <input type="radio" checked>
+        <input type="radio">
+        <button type="">submit</button>
+        <input type="range">
+    </form>
+
+    <script>
+        ori = [1, 2, 3, 4]
+        arr = []
+        let ans = ori.forEach((a, b, c) => {
+            arr.push(a * 2)
+        })
+
+        console.log(arr, 'arr')
+    </script>
+</body>
+
+</html>

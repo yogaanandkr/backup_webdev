@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div+p {
+            color: blue;
+        }
+
+        div>h2 {
+            color: greenyellow;
+        }
+
+        div~h2 {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="">
+        <h1>hello</h1>
+        <div class="two">
+            <h2>HELLO 2</h2>
+        </div>
+        <p>aft div 2</p>
+        <section>
+            <h2>h2 inside section</h2>
+        </section>
+    </div>
+    <h2>h2 aft div</h2>
+    <h2>h22 aft div</h2>
+    <p>aft div 1</p>
+</body>
+
+</html>

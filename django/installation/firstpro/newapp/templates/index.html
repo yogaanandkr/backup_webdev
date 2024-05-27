@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td colspan="4"><input type="text" placeholder="0" id="s" /></td>
+      </tr>
+
+      <tr>
+        <td><button id="ac">AC</button></td>
+        <td><button id="ce">CE</button></td>
+        <td><button class="x">/</button></td>
+        <td><button class="x">%</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="x">1</button></td>
+        <td><button class="x">2</button></td>
+        <td><button class="x">3</button></td>
+        <td><button class="x">+</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="x">4</button></td>
+        <td><button class="x">5</button></td>
+        <td><button class="x">6</button></td>
+        <td><button class="x">-</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="x">7</button></td>
+        <td><button class="x">8</button></td>
+        <td><button class="x">9</button></td>
+        <td><button class="x">*</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="x">0</button></td>
+        <td><button class="x">00</button></td>
+        <td><button class="x">.</button></td>
+        <td><button id="eq">=</button></td>
+      </tr>
+    </table>
+
+    <script>
+      let scr = document.getElementById("s"); //direct
+      document.getElementsByTagName; //collection
+      document.getElementsByClassName; //collection
+      document.querySelector; //direct
+      document.querySelectorAll; //nodelist
+      let a = document.getElementsByClassName("x");
+      for (let i = 0; i < a.length; i++) {
+        a[i].addEventListener("click", () => {
+          scr.value = scr.value + a[i].innerHTML;
+        });
+      }
+
+      let ac = document.getElementById("ac");
+      ac.addEventListener("click", () => {
+        scr.value = "";
+      });
+
+      let ce = document.getElementById("ce");
+      ce.addEventListener("click", () => {
+        scr.value = scr.value.slice(0, scr.value.length - 1);
+      });
+
+      let eq = document.getElementById("eq");
+      eq.addEventListener("click", () => {
+        scr.value = eval(scr.value);
+      });
+
+      // let x = "yokeshanand762001@gmail.commmm";
+
+      // let check = /^([a-zA-Z0-9]+)@([a-z]+).([a-z]{2,5})$/;
+
+      // if (check.test(x)) {
+      //   alert("correct");
+      // } else {
+      //   alert("wrong");
+      // }
+    </script>
+  </body>
+</html>

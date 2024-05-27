@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // a promise is a object representing eventual completion or failure of an asynchronous operation
+
+        // 1. callback hell
+        // 2. inversion of controll
+
+        // callback hell
+
+        let cart = ['dhothi', 'pant', 'hoodie']
+        let prods = ['dhothi', 'shirt', 'pant', 'hoodie']
+
+        const my_cart = create_order(cart)
+        console.log('my_cart: ', my_cart);
+
+        my_cart.then(a => {
+            console.log('then method', a);
+            payment()
+                .then(a => {
+                    console.log(a);
+                })
+                .catch(err => {
+                    console.log(err);
+                })
+        })
+            .catch(e => {
+                console.log('err res', e);
+            })
+            .then(b => {
+                console.log('hello');
+            })
+            .catch(c => {
+                console.log('errormsg');
+            })
+        function payment() {
+            const a = new Promise((res, rej) => {
+                // res('payment successfull')
+                rej('payment nottttt successfull')
+            })
+            return a
+        }
+
+        // my_cart.then(function (data) {
+        //     console.log(data)
+        // })
+        //     .then(function (orderid) {
+        //         console.log(orderid);
+        //     })
+        //     .catch(function (e) {
+        //         console.log(e.message);
+        //     })
+        //     .then(function (e) {
+        //         console.log('hello');
+        //     })
+
+
+
+        function create_order(cart) {
+            let pr = new Promise(function (res, rej) {
+                if (validate_cart(cart) === false) {
+                    let err = new Error('Cart not valid')
+                    rej(err)
+                }
+
+                else {
+                    let orderid = '45258'
+                    if (orderid) {
+                        console.log('order created');
+                        res(orderid)
+                    }
+                }
+            })
+            // console.log('pr:::', pr);
+            return pr
+        }
+
+        function validate_cart(cart) {
+            console.log('validating');
+            let val = cart.map(a => {
+                if (prods.includes(a)) {
+                    return true
+                }
+                else {
+                    return false
+                }
+            })
+            if (val.includes(false)) {
+                console.log('false in val');
+                return false
+            }
+            return true
+        }
+
+        const map = fetch('http://maps.google.com/maps')
+            .then((a) => {
+
+                console.log(map);
+            })
+
+            .catch(err => {
+                console.error(err)
+            })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

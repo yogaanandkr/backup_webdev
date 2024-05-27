@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* th {
+            color: greenyellow;
+        } */
+
+        td img {
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="2px" rules="all" style="background-color: black; color: aliceblue; height: 100vh; width: 100%;"
+        cellpadding="20px" cellspacing="200px">
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Ultimate</th>
+        </tr>
+
+        <tr>
+            <td>Omen</td>
+            <td>Controller</td>
+            <td>Teleport</td>
+        </tr>
+
+        <tr>
+            <td>Raze</td>
+            <td>Duelist</td>
+            <td>Rocket</td>
+        </tr>
+        <tr>
+            <td>Jett</td>
+            <td>Duelist</td>
+            <td>Knifes</td>
+        </tr>
+    </table>
+
+
+    <h1>========================================================</h1>
+    <hr>
+
+    <center>
+
+        <table rules="all" border="2px" style="width: 50px; height: 200px;" cellspacing="25px" cellpadding="25px"
+            style="background-color:sandybrown ; text-align: center;">
+            <tr>
+                <td style="background-color: black; color: white;">1</td>
+                <td style="background-color: gray; color: blue;">2</td>
+                <td style="color: red;">3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td style="color: blue; background-color: black;">7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+    </center>
+
+    <hr>
+    <center>
+
+        <table border="5px" rules="all" style="width: 200px; height: 250px;" cellpadding="50%">
+            <tr>
+                <td rowspan="2">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td rowspan="4">4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td rowspan="2">8</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+            </tr>
+        </table>
+    </center>
+
+    <center>
+        <table border="2px" rules="all" cellpadding="50%">
+            <tr>
+                <td>100</td>
+                <td>200</td>
+                <td rowspan="3">300</td>
+                <td>400</td>
+                <td rowspan="2">500</td>
+            </tr>
+            <tr>
+                <td rowspan="3">600</td>
+                <td>700</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td rowspan="2">900</td>
+                <td rowspan="2">1000</td>
+                <td>500</td>
+
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>500</td>
+            </tr>
+        </table>
+    </center>
+
+
+    <center>
+        <h1>col and row span</h1>
+    </center>
+
+    <center>
+        <table border="2px" rules="all" cellpadding="50%">
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td rowspan="2">e</td>
+                <td>f</td>
+            </tr>
+
+            <tr>
+                <td>c</td>
+                <td>d</td>
+                <td>g</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">h</td>
+                <td>i</td>
+                <td>j</td>
+            </tr>
+
+            <tr>
+                <td>k</td>
+                <td>l</td>
+                <td colspan="2">m</td>
+            </tr>
+        </table>
+    </center>
+
+    <center>
+        <h1>Food table</h1>
+    </center>
+
+
+    <center>
+
+        <table border="2px" rules="all" style="color: greenyellow; background-color: red; text-align: center;">
+            <tr>
+                <td colspan="3">Briyani</td>
+                <td rowspan="2">Pulav</td>
+            </tr>
+
+            <tr>
+                <td>egg rice</td>
+                <td colspan="2">pulihora</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">sambar rice</td>
+                <td>chicken</td>
+                <td>fried rice</td>
+            </tr>
+
+            <tr>
+                <td>puliyogare</td>
+                <td>curd rice</td>
+                <td colspan="2">payasam</td>
+            </tr>
+        </table>
+    </center>
+
+
+    <table rules="" border="2px" cellpadding="10px">
+        <tr>
+            <th rowspan="11">tcb</th>
+            <th>Order No:</th>
+            <td colspan="3">#kjfk0</td>
+        </tr>
+        <tr>
+            <th>order date</th>
+            <td colspan="3">23-MAR-2016</td>
+        </tr>
+
+        <tr>
+            <th colspan="4">Customer</th>
+        </tr>
+
+        <tr>
+            <td>name:</td>
+            <td colspan="3">John</td>
+        </tr>
+
+        <tr>
+            <td>address</td>
+            <td colspan="3">Independance day</td>
+        </tr>
+
+        <tr>
+            <th colspan="4">order details</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>of mice and men</td>
+            <td>book</td>
+            <td>10.00$</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>less misarieble</td>
+            <td>book</td>
+            <td>12.00$</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>game of thrones</td>
+            <td>dvd</td>
+            <td>50.00$</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>samsung galaxy</td>
+            <td>mobile phone</td>
+            <td>200.00$</td>
+        </tr>
+
+        <tr>
+            <th colspan="3">Total</th>
+            <td>272.00$</td>
+        </tr>
+    </table>
+
+    <center>
+        <h1>last</h1>
+    </center>
+
+    <table rules="" border="2px" cellpadding="">
+        <tr>
+            <td colspan="4">Invoice #54644425</td>
+            <td colspan="3">15 september 2020</td>
+        </tr>
+
+        <tr>
+            <td colspan="1">Pay to <br> <br>
+                acme billing co. <br> <br>
+                123 main st. <br> <br>
+                cityville, na 12345</td>
+
+            <td colspan="6">customer: <br><br>
+                John Smith <br><br>
+                321 willoy way <br><br>
+                southeast northwestershire, ma 54321</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                Name/ Description <br><br>
+                paperclips <br><br>
+                staples(box)
+            </td>
+
+            <td colspan="1">QTY <br><br>
+                2000 <br><br>
+                200
+            </td>
+            <td colspan="1">
+                @ <br> <br>
+                0.02 <br> <br>
+                2.00
+            </td>
+
+            <td colspan="3">
+                cost <br> <br>
+                2000 <br><br>
+                200.00
+            </td>
+        </tr>
+
+        <tr>
+            <th colspan="4">subtotal</th>
+            <td colspan="">20.00</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">tax</td>
+            <td colspan="">9%</td>
+            <td colspan="3">19.80</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">Grand total:</td>
+            <td colspan="3">239.80</td>
+        </tr>
+    </table>
+
+    <center>
+        <h1>home work</h1>
+    </center>
+    <center>
+        <table rules="all" border="2px">
+            <tr>
+                <td> <img
+                        src="https://c4.wallpaperflare.com/wallpaper/603/912/895/jett-valorant-valorant-fan-art-deviantart-nibelart-hd-wallpaper-preview.jpg"
+                        alt=""></td>
+                <td> <img
+                        src="https://c4.wallpaperflare.com/wallpaper/531/112/977/valorant-sova-valorant-hd-wallpaper-preview.jpg"
+                        alt=""></td>
+                <td> <img src="https://wallpapers.com/images/high/valorant-sage-healing-orb-y74449ip2warntje.webp"
+                        alt=""></td>
+            </tr>
+
+            <tr>
+                <td> <img src="https://wallpapers.com/images/high/valorant-red-kay-o-xlcmyh3eh7zd1yuh.webp" alt=""></td>
+                <td> <img src="https://wallpapers.com/images/high/omen-dark-cover-phone-valorant-iy83rh3m74y5s72h.webp"
+                        alt=""></td>
+                <td> <img src="https://wallpapers.com/images/high/valorant-phoenix-flare-orb-77mcvogi9s3hmmia.webp"
+                        alt=""></td>
+            </tr>
+
+            <tr>
+                <td> <img src="https://wallpapers.com/images/high/valorant-brimstone-fire-ww1cpw5rqd9tc9ce.webp" alt="">
+                </td>
+                <td> <img src="https://wallpapers.com/images/high/valorant-cypher-bo9be43ldizotu8p.webp" alt=""></td>
+                <td> <img src="https://wallpapers.com/images/high/valorant-reyna-zlq9k9k3eeespvzi.webp" alt=""></td>
+            </tr>
+
+        </table>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="check()">gen</button>
+    <h1></h1>
+
+
+    <script>
+        function gen() {
+            let a = Math.trunc(Math.random() * 9999)
+            return a
+        }
+
+        function check(a = 0) {
+            if (String(a).length == 4) {
+                document.querySelector("h1").innerHTML = a
+                return
+            }
+            else {
+                check(gen())
+            }
+        }
+
+        // check(gen())
+        // let b = 0
+
+        // if (String(gen()).length = 4) {
+        //     let b = gen()
+        //     document.querySelector("h1").innerHTML = b
+
+        //     console.log(String(b).length);
+        //     console.log(b);
+        // }
+        // else {
+
+        //     document.querySelector("h1").innerHTML = b
+        // }
+
+
+    </script>
+</body>
+
+</html>

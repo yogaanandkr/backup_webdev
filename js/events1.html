@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="one" type="text" placeholder="enter number 1">
+    <input id="two" type="text" placeholder="enter number 2"> <br>
+    <button id="sum"> sum</button><br>
+    <button id="diff">diff</button>
+    <hr>
+
+    <h1 id="sumh1"></h1>
+    <h1 id="diffh1"></h1>
+
+
+    <script>
+        let button = document.getElementById('sum');
+        button.addEventListener("click", () => {
+
+            let in1 = document.getElementById('one').value
+            let in2 = document.getElementById('two').value
+            document.body.style.backgroundColor = 'red';
+            document.querySelector('#sumh1').innerHTML = Number(in1) + Number(in2)
+        })
+
+        let button2 = document.getElementById('diff');
+        button2.addEventListener("click", () => {
+
+            let in1 = document.getElementById('one').value
+            let in2 = document.getElementById('two').value
+            document.body.style.backgroundColor = 'cyan';
+            document.querySelector('#diffh1').innerHTML = Number(in1) - Number(in2)
+        })
+    </script>
+</body>
+
+</html>

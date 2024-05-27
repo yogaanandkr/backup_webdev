@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      body {
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./one.jpg" alt="" class="image" />
+    <img src="./two.jpg" alt="" class="image" />
+    <img src="./three.jpg" alt="" class="image" />
+    <img src="./four.jpg" alt="" class="image" />
+
+    <script>
+      let all = document.querySelectorAll("img");
+      for (let i = 0; i < all.length; i++) {
+        all[i].addEventListener("click", () => {
+          let img = all[i].getAttribute("src");
+          document.body.style.backgroundImage = `url(${img})`;
+        });
+      }
+      
+    </script>
+  </body>
+</html>

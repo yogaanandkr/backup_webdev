@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // promise.all ([]) ==> if all success it give arry of succes promises else returns rejected promise
+
+        // promise.allSettled([]) ==> it will return an array of both resolved and rejected promises 
+
+        // promise.race([]) => it will return the first rejected or resolved promise
+
+        // promise.any([]) => return first fullfilled promise. if all promises rejected it will return a aggregate error
+
+
+
+        const p1 = new Promise((res, rej) => {
+            setTimeout(() => {
+                // res('p1 is success')
+                rej('p1 is rejected')
+
+            }, 5000);
+        })
+
+        const p2 = new Promise((res, rej) => {
+            setTimeout(() => {
+                // res('p2 is success')
+                rej('p2 is rejected')
+            }, 1000);
+        })
+
+        const p3 = new Promise((res, rej) => {
+            setTimeout(() => {
+                // res('p3 is success')
+                rej('p3 is rejected')
+
+            }, 2000);
+        })
+
+        Promise.any([p1, p2, p3])
+            .then(res => {
+                console.log(res);
+            })
+            .catch(e => {
+                console.log(e);
+            })
+
+
+
+    </script>
+</body>
+
+</html>

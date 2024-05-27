@@ -1,0 +1,36 @@
+<!-- your_template.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Welcome to chats</h1>
+
+    {% for i in a %}
+    <p>{{ i }}</p>
+    {% endfor %} {% with d='django' %}
+    <center><h1>Welcome to {{d}} class</h1></center>
+    {% endwith %}
+    <p>upper -{{ a|upper }}</p>
+    <p>lower -{{ a|lower }}</p>
+    <p>title -{{ a|title }}</p>
+    <p>add - {{a|add:'*'}}</p>
+    <p>wordcount -{{ a|wordcount }}</p>
+    <p>length -{{ a|length }}</p>
+    <p>linenumbers -{{ a|linenumbers }}</p>
+    <p>random -{{ a|random }}</p>
+    <p>slice -{{ a|slice:'0:2' }}</p>
+    <p>first -{{ a|first }}</p>
+    <p>last -{{ a|last }}</p>
+    <p>join -{{ a|join:' || ' }}</p>
+    <p>default -{{ a|default:"Web dev" }}</p>
+    <p>cut -{{ a|cut:"You" }}</p>
+    <p>capfirst -{{ a|capfirst }}</p>
+
+    <h1>{{data.b}}</h1>
+  </body>
+</html>

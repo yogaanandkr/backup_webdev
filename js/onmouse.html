@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text">
+    <img src="../css/assignments_on_leave/burger.png" style="width: 100px; height: 100px;" alt="">
+
+    <hr>
+    <h1></h1>
+
+
+    <script>
+        let inp = document.querySelector('input')
+        let img = document.querySelector('img')
+        img.addEventListener('mouseover', () => {
+            let h1 = document.querySelector('h1')
+            h1.style.cssText = "background-color: red; font-size: 100px"
+            h1.innerHTML = inp.value
+        })
+
+        img.addEventListener('mouseout', () => {
+            let h1 = document.querySelector('h1')
+            h1.innerHTML = null
+        })
+    </script>
+</body>
+
+</html>

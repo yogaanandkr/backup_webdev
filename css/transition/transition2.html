@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 500px;
+            width: 100%;
+            background-image: url(./mountain.png), url(./mountain.png), url(./sea.jpg);
+            background-size: 50% 300px, 55% 300px, 100%;
+            background-repeat: no-repeat;
+            background-position: 0px 0px, 500px 0px, 0px;
+
+            display: flex;
+            justify-content: center;
+            transition: background-position 3s;
+        }
+
+        .dolphin {
+            position: absolute;
+            width: 500px;
+            height: 250px;
+            background-color: transparent;
+            background-image: url(./dolphin.png);
+            background-size: 250px 250px;
+            background-repeat: no-repeat;
+            opacity: 0;
+            transition: 5s;
+        }
+
+        h1 {
+            font-size: 0px;
+            opacity: 0;
+            transition: font-size 3s, color 3s, opacity 3s;
+
+        }
+
+        .main:hover {
+            background-position: -100px 0px, 600px 0px, 0px;
+            transition: 3s;
+        }
+
+        .main:hover h1 {
+            opacity: 100;
+            font-size: 100px;
+            color: red;
+        }
+
+        .main:hover .dolphin {
+            position: absolute;
+            opacity: 1;
+            transform: rotate(45deg);
+            background-position: 600px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <span class="dolphin"></span>
+        <h1>Jump here</h1>
+    </div>
+</body>
+
+</html>

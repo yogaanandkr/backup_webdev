@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // a = prompt('enter a color')
+        // switch (a) {
+        //     case 'red':
+        //         console.log(`${a} is present`);
+        //         break;
+
+        //     case 'green':
+        //         console.log(`${a} is present`);
+        //         break;
+        //     case 'blue':
+        //         console.log(`${a} is present`);
+        //         break;
+
+        //     default:
+        //         console.log(`${a} is not present`);
+        //         break;
+        // }
+
+        // for (let i = 0; i < 10; i++) {
+        //     console.log(i);
+        // }
+
+
+        // console.log(a());
+        // console.log(a);
+        // console.log(c(5, 4));
+
+        let a = (a, b) => {
+            return a + b
+        }
+
+        // console.log(a(4, 5));
+
+        let b = function (a, b) {
+            return a + b
+        }
+
+        function c(a, b) {
+            return a + b
+        }
+
+        console.log(z);
+        var z = 10;
+
+        (function im() {
+            console.log('immediately invoked');
+        })()
+
+        function one() {
+            console.log('this is function one')
+            return three();
+        }
+
+        function two() {
+            console.log('this is function two')
+            return three();
+        }
+
+        function three() {
+            console.log('this is function three')
+            return 100
+        }
+
+        // console.log(one(two()), 'final');
+
+        function spread(a, ...rest) {
+            let result = rest;
+            return result
+        }
+        // console.log(spread(1, 2, 3, 4, 5, 6));
+
+        // a = [1, 2, 3, 4, 5, 6, 6]
+        // b = [7, 8, 9, 10]
+        // console.log(a.concat(b));
+        // console.log(a.includes(3));
+        // console.log(a.indexOf(6));
+        // a.push(40)
+        // console.log(a, 'push');
+        // a.pop()
+        // console.log(a);
+        // a.unshift(40)
+        // console.log(a);
+        // a.shift()
+        // console.log(a, 'shift');
+        // // a.reverse()
+        // // console.log(a, 'reverse');
+        // console.log(a.join('*'));
+        // console.log(a.slice(0, 5), 'slice');
+        // a.splice(0, 2, 100)
+        // console.log(a);
+        // // a.toString()
+        // console.log(a.toString());
+
+        // function mapping(a) {
+        //     let res = a.map((c, d, e, f) => {
+        //         console.log(c, d,);
+        //         return c * 2
+        //     })
+        //     return res
+        // }
+
+        // function foreach(a) {
+        //     arr = []
+        //     let res = a.forEach((d, b, c) => {
+        //         arr.push(d * 2)
+        //     })
+        //     console.log(arr);
+        // }
+
+        // function filter(a) {
+        //     let ans = a.filter((a, b, c, d) => {
+        //         console.log(a, b, c, d);
+        //         return a % 2 == 0
+        //     })
+        //     return ans
+        // }
+
+        // let red = (a) => {
+        //     let ans = a.reduce((a, b, c, d, e) => {
+        //         console.log(a, b, c, d, e);
+        //         return a + b
+        //     })
+        //     return ans
+        // }
+
+        // console.log(mapping([1, 2, 3, 4]));
+        // console.log(foreach([1, 2, 3, 4]));
+        // console.log(filter([1, 2, 3, 4]), 'filter');
+        // console.log(red([1, 2, 3, 4]), 'reduce');
+        arr = [2, 3, 4, 5, 6]
+        let res = arr.filter((a, b) => {
+            return a % 2 == 0
+        })
+        console.log('hello');
+
+
+        let arr1 = [1, 2, 3, 4]
+        var ans = arr1.forEach((a, b, c) => {
+
+            console.log(a * 2);
+            return a * 2
+        })
+        console.log(ans, 'foreach');
+
+        let arr2 = [1, 2, 3, 4]
+        var ans2 = arr2.map((a, b, c) => {
+            return a * 2
+        })
+        console.log(ans2, 'map');
+
+    </script>
+</body>
+
+</html>

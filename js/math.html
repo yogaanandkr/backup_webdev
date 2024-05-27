@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>change</button>
+
+    <script>
+        let button = document.querySelector('button');
+        // button.addEventListener('click', () => {
+        setInterval(() => {
+            document.body.style.transition = '2s'
+            document.body.style.backgroundColor = `rgb(${Math.trunc(Math.random() * 256)}, ${Math.trunc(Math.random() * 256)}, ${Math.trunc(Math.random() * 256)},${(Math.random().toFixed(1))})`
+
+            // console.log(`rgb(${Math.trunc(Math.random() * 256)}, ${Math.trunc(Math.random() * 256)}, ${Math.trunc(Math.random() * 256)},${(Math.random().toFixed(1))}`);
+        }, 500);
+        // })
+
+
+    </script>
+
+</body>
+
+</html>

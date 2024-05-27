@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./res.html">
+        <label for="">email: </label>
+        <input type="email" required> <sup style="color: red;">**</sup><br><br>
+
+        <label for="">Password</label>
+        <input type="password" required="required" minlength="8" maxlength="10"><sup style="color: red;">**</sup>
+        <br><br>
+
+        <label for="">Gender</label> <br>
+        <input type="radio" name="a" checked> <label for="">Male</label> <br>
+        <input type="radio" name="a"> <label for="">Female</label> <br>
+        <input type="radio" name="a"> <label for="">Others</label> <br>
+
+        <br>
+        <br>
+
+        <label for="">Skills</label> <br>
+        <input type="checkbox" required checked><label for="">SQL</label> <br>
+        <input type="checkbox"><label for="">python</label><br>
+        <input type="checkbox"><label for="">Django</label> <br>
+        <label for="">DOB:</label>
+        <input type="date" min="01-01-1995" max="31-12-2005">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            height: 100px;
+            width: 100px;
+            background-color: cyan;
+            border: 2px solid black;
+            border-radius: 100%;
+            position: relative;
+            top: 300px;
+            left: 50%;
+        }
+
+        .square {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            position: absolute;
+            bottom: 70px;
+            left: 70px;
+            text-align: center;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            color: white;
+            display: none;
+        }
+
+        h1 {
+            margin-top: 90px;
+            display: none;
+        }
+
+        .square:hover h1 {
+            display: block;
+        }
+
+        .circle:hover .square {
+            display: block;
+
+            .circle:hover .square {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">
+
+        <div class="square">
+            <h1>welcome</h1>
+        </div>
+    </div>
+</body>
+
+</html>

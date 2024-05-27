@@ -1,0 +1,11 @@
+h1, h3 {
+    color: blue;
+}
+
+body{
+    background-color: rgba(0, 255, 255, 0.096) ;
+}
+
+p{
+    background-color: cyan;
+}

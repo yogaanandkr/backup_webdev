@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Targeting the number input */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 0;
+            color: red;
+            /* Change this to your desired color */
+        }
+
+        input[type="number"] {
+            -moz-appearance: textfield;
+            /* For Firefox */
+        }
+    </style>
+</head>
+
+<body>
+    <table rules="all" border="2px" cellpadding="10px">
+        <!-- row 1 -->
+        <tr>
+            <td rowspan="2" colspan="2">r1c1</td>
+            <td>r1c3</td>
+            <td rowspan="2">r1c4</td>
+            <td colspan="2" rowspan="2">r1c5</td>
+        </tr>
+
+        <!-- row 2 -->
+        <tr>
+            <td rowspan="2">r2c3</td>
+        </tr>
+
+        <!-- row 3 -->
+
+        <tr>
+            <td colspan="2">r3c1</td>
+            <td colspan="2">r3c4</td>
+            <td>r3c6</td>
+        </tr>
+
+        <!-- row 4 -->
+        <tr>
+            <td>r4c1</td>
+            <td colspan="2">r4c2</td>
+            <td rowspan="2">r4c4</td>
+            <td colspan="2">r4c5</td>
+        </tr>
+
+        <!-- row 5 -->
+        <tr>
+            <td colspan="2" rowspan="2">r5c1</td>
+            <td rowspan="2">r5c3</td>
+            <td rowspan="2" colspan="2">r5c5</td>
+        </tr>
+
+        <!-- row 6 -->
+
+        <tr>
+            <td>r6c4</td>
+        </tr>
+    </table>
+
+    <form action="">
+        <table border="2px" cellpadding="30px">
+            <tr style="color: greenyellow;">
+                <th>ID</th>
+                <th>Train Company</th>
+                <th>Destination</th>
+                <th>Time</th>
+                <th>Platform</th>
+                <th>Date</th>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Great wester</td>
+                <td>London</td>
+                <td>01:00:00</td>
+                <td>1</td>
+                <td>2017-01-31</td>
+                <td>
+                    <button>edit</button> <br>
+                    <button>delete</button> <br>
+                    <button>save</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>National</td>
+                <td>Exter</td>
+                <td>23:03:00</td>
+                <td>3</td>
+                <td>2017-02mh-100</td>
+                <td>
+                    <button>edit</button> <br>
+                    <button>delete</button> <br>
+                    <button>save</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>New ID Will <br> be given <br> automatically</td>
+                <td> <input type="text"></td>
+                <td> <input type="text"></td>
+                <td> <input type="text"></td>
+                <td><input type="number" style="width: 30px;"></td>
+                <td><input type="date"></td>
+                <td><button>Insert Row</button></td>
+            </tr>
+        </table>
+    </form>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sum(...a) {
+            let fil = a.filter((a) => {
+                return a % 2 == 0
+            })
+            let res = fil.reduce((a, b) => {
+                return a + b
+            })
+            return res
+        }
+
+        // console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
+
+        function large(...a) {
+            let large = 0
+            let ans = a.forEach((a) => {
+                if (a > large) {
+                    large = a
+                }
+            })
+            return large
+        }
+
+        function large1(...a) {
+            let ans = a.reduce((a, b) => {
+                if (a > b) {
+                    return a
+                }
+                else {
+                    return b
+                }
+            })
+            return ans
+        }
+
+        // console.log(large(1, 2, 3, 40, 5, 6, 7, 8, 9, 10), 'foreach')
+        // console.log(large1(1, 2, 3, 40, 5, 6, 7, 8, 9, 10), 'reduce')
+
+        let places = ['nagawara', 'hebbal', 'bengaluru']
+        let ans = places.reduce((a, b) => {
+            if (a.length > b.length) {
+                return a
+            }
+            else {
+                return b
+            }
+
+        })
+
+        // console.log(ans, 'largest length');
+
+        function empty(a) {
+            length = a.length
+            for (let i = 0; i < length; i++) {
+                console.log(a);
+                a.pop()
+            }
+            return a
+        }
+
+        // console.log(empty([10, 20, 30, 40]), 'empty');
+
+        let x = [
+            {
+                id: 1,
+                sal: 100,
+                age: 15
+            },
+            {
+                id: 2,
+                sal: 200,
+                age: 20
+            },
+            {
+                id: 3,
+                sal: 300,
+                age: 18
+            }
+        ]
+
+        let change = x.map((a) => {
+            if (a.age >= 18) {
+                a.sal += 200
+                // Object.assign(a, { sal: sal + 100 })
+            }
+        })
+        console.log(x);
+
+        // let anss = x.map((a, b) => {
+        //     return a.sal
+        // })
+
+        // let red = anss.reduce((a, b) => {
+        //     return (a + b)
+        // })
+
+        // console.log(red / x.length);
+        // 1222222211
+        // let sal = 0
+        // for (var i = 0; i < x.length; i++) {
+        //     sal += x[i].sal
+        // }
+        // // console.log(sal / i, 'using for loop');
+        // let add = x.forEach((a) => {
+        //     Object.assign(a, { com: 'Tcs' })
+        // })
+        // console.log(x);
+
+
+
+    </script>
+</body>
+
+</html>

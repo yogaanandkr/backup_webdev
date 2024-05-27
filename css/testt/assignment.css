@@ -1,0 +1,60 @@
+*{
+    scroll-behavior: smooth;
+}
+
+
+p{
+    /* margin-bottom: 15px; */
+}
+.toc{
+    display: inline-block;
+    width: 200px;
+
+    /* text-align: center; */
+    /* padding: 50px 15px 50px 50px; */
+    border: 2px solid black;
+}
+
+.toc h3{
+    text-align: center;
+}
+
+section{
+    /* margin-bottom: 20px; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#html{
+    background-color: rgba(128, 128, 128, 0.574);
+}
+
+img{
+    height: 180px;
+    width: 250px;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+#javascript{
+    background-color: rgba(128, 128, 128, 0.574);
+}
+
+img:hover{
+    height: 500px;
+    width: 100%;
+
+}
+
+.up{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 30px;
+}
+
+i{
+    color: red;
+
+}
+

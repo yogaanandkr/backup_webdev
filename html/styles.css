@@ -1,0 +1,11 @@
+body{
+    /* background-color: lightgray; */
+    background-color: black;
+    color: white;
+}
+
+mark{
+    background-color: white;
+    color: black;
+}
+

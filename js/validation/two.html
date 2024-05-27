@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signin">
+        <form>
+            <input id="email" required type="email"> <br>
+            <input id="password" required type="password"> <br>
+            <button>Submit</button> <br>
+        </form>
+    </div>
+    <script>
+        let a = document.querySelector("button")
+        let email = document.getElementById("email")
+        let pass = document.getElementById("password")
+
+        a.addEventListener("click", () => {
+            if (email.value == localStorage.getItem("email") && pass.value == localStorage.getItem("password")) {
+                window.open(".../css/mixmi/mixmi.html")
+            }
+            else {
+                alert("enter valid credentials")
+            }
+        })
+    </script>
+</body>
+
+</html>
